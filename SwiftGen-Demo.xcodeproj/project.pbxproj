@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AB16E5F26F7876F00FBE62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB16E5E26F7876F00FBE62C /* AppDelegate.swift */; };
-		0AB16E6126F7876F00FBE62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB16E6026F7876F00FBE62C /* SceneDelegate.swift */; };
 		0AB16E6326F7876F00FBE62C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB16E6226F7876F00FBE62C /* ViewController.swift */; };
-		0AB16E6626F7876F00FBE62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB16E6426F7876F00FBE62C /* Main.storyboard */; };
 		0AB16E6826F7877100FBE62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB16E6726F7877100FBE62C /* Assets.xcassets */; };
 		0AB16E6B26F7877100FBE62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB16E6926F7877100FBE62C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		0AB16E5B26F7876F00FBE62C /* SwiftGen-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftGen-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB16E5E26F7876F00FBE62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AB16E6026F7876F00FBE62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0AB16E6226F7876F00FBE62C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AB16E6526F7876F00FBE62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AB16E6726F7877100FBE62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AB16E6A26F7877100FBE62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AB16E6C26F7877100FBE62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +33,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1753CE26F7CC90003973AF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0AB16E6C26F7877100FBE62C /* Info.plist */,
+				0AB16E5E26F7876F00FBE62C /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A1753CF26F7CC9B003973AF /* Sceens */ = {
+			isa = PBXGroup;
+			children = (
+				0AB16E6226F7876F00FBE62C /* ViewController.swift */,
+			);
+			path = Sceens;
+			sourceTree = "<group>";
+		};
+		0A1753D026F7CCA3003973AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AB16E6726F7877100FBE62C /* Assets.xcassets */,
+				0AB16E6926F7877100FBE62C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0AB16E5226F7876F00FBE62C = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +78,9 @@
 		0AB16E5D26F7876F00FBE62C /* SwiftGen-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0AB16E5E26F7876F00FBE62C /* AppDelegate.swift */,
-				0AB16E6026F7876F00FBE62C /* SceneDelegate.swift */,
-				0AB16E6226F7876F00FBE62C /* ViewController.swift */,
-				0AB16E6426F7876F00FBE62C /* Main.storyboard */,
-				0AB16E6726F7877100FBE62C /* Assets.xcassets */,
-				0AB16E6926F7877100FBE62C /* LaunchScreen.storyboard */,
-				0AB16E6C26F7877100FBE62C /* Info.plist */,
+				0A1753D026F7CCA3003973AF /* Resources */,
+				0A1753CF26F7CC9B003973AF /* Sceens */,
+				0A1753CE26F7CC90003973AF /* Core */,
 			);
 			path = "SwiftGen-Demo";
 			sourceTree = "<group>";
@@ -126,7 +144,6 @@
 			files = (
 				0AB16E6B26F7877100FBE62C /* LaunchScreen.storyboard in Resources */,
 				0AB16E6826F7877100FBE62C /* Assets.xcassets in Resources */,
-				0AB16E6626F7876F00FBE62C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,21 +156,12 @@
 			files = (
 				0AB16E6326F7876F00FBE62C /* ViewController.swift in Sources */,
 				0AB16E5F26F7876F00FBE62C /* AppDelegate.swift in Sources */,
-				0AB16E6126F7876F00FBE62C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0AB16E6426F7876F00FBE62C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AB16E6526F7876F00FBE62C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0AB16E6926F7877100FBE62C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +295,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SwiftGen-Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftGen-Demo/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +314,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SwiftGen-Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftGen-Demo/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
